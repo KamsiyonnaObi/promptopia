@@ -1,4 +1,4 @@
-import mongoose, {Schema, model, models } from 'mongoose';
+import {Schema, model, models } from 'mongoose';
 import User from './user';
 
 const PromptSchema = new Schema({
@@ -11,7 +11,7 @@ const PromptSchema = new Schema({
         required: [true, 'Prompt is required.']
     },
     tag: {
-        tyoe: String,
+        type: String,
         required: [true, 'Tag is required'],
     }
 });
